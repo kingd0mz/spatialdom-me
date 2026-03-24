@@ -7,7 +7,7 @@ export function ContactSection() {
   return (
     <Section id="contact">
       <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_360px] lg:items-start lg:gap-10">
-        <Reveal className="theme-card rounded-[1.7rem] p-6 sm:p-8">
+        <Reveal data-cursor="card" className="theme-card rounded-[1.7rem] p-6 sm:p-8">
           <SectionHeader
             label="Contact"
             title="Available for collaborations, research, systems work, and speaking engagements."
@@ -30,7 +30,7 @@ export function ContactSection() {
           </div>
         </Reveal>
 
-        <Reveal delay={0.1} className="system-panel rounded-[1.7rem] p-6 pt-10 sm:p-7 sm:pt-10">
+        <Reveal data-cursor="card" delay={0.1} className="system-panel rounded-[1.7rem] p-6 pt-10 sm:p-7 sm:pt-10">
           <p className="text-[0.74rem] uppercase tracking-[0.22em] text-text-muted">Direct Line</p>
           <div className="mt-5 grid gap-4">
             {contactLinks.map((item) => (
@@ -39,6 +39,7 @@ export function ContactSection() {
                 href={item.href}
                 target={item.href.startsWith('http') ? '_blank' : undefined}
                 rel={item.href.startsWith('http') ? 'noreferrer' : undefined}
+                data-cursor="card"
                 className="theme-card rounded-[1.2rem] px-4 py-4 transition hover:border-border-hover hover:bg-surface-hover"
               >
                 <p className="text-[0.72rem] uppercase tracking-[0.22em] text-text-muted">{item.label}</p>

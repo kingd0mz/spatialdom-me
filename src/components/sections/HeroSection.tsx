@@ -87,17 +87,17 @@ export function HeroSection() {
           </div>
 
           <div className="mt-6 grid gap-3 text-sm text-text-body sm:grid-cols-3">
-            <div className="theme-card rounded-2xl px-4 py-3">
+            <div data-cursor="card" className="theme-card rounded-2xl px-4 py-3">
               <p className="text-[0.7rem] uppercase tracking-[0.22em] text-text-muted">Base</p>
               <p className="mt-2 text-text-secondary">{profile.location}</p>
             </div>
-            <div className="theme-card rounded-2xl px-4 py-3">
+            <div data-cursor="card" className="theme-card rounded-2xl px-4 py-3">
               <p className="text-[0.7rem] uppercase tracking-[0.22em] text-text-muted">Email</p>
               <a href={`mailto:${profile.email}`} className="mt-2 block text-link">
                 {profile.email}
               </a>
             </div>
-            <div className="theme-card rounded-2xl px-4 py-3">
+            <div data-cursor="card" className="theme-card rounded-2xl px-4 py-3">
               <p className="text-[0.7rem] uppercase tracking-[0.22em] text-text-muted">Ecosystem</p>
               <a href={profile.spatialdom} target="_blank" rel="noreferrer" className="mt-2 block text-link">
                 spatialdom.xyz
@@ -105,7 +105,7 @@ export function HeroSection() {
             </div>
           </div>
 
-          <div className="system-panel mt-8 rounded-[1.45rem] p-5 pt-9 lg:hidden">
+          <div data-cursor="card" className="system-panel mt-8 rounded-[1.45rem] p-5 pt-9 lg:hidden">
             <p className="text-[0.74rem] uppercase tracking-[0.22em] text-text-muted">Current Focus</p>
             <p className="mt-3 text-[1rem] leading-7 text-text-secondary">
               Smart regions, earth observation platforms, digital infrastructure, and institutional capacity building.
@@ -118,6 +118,7 @@ export function HeroSection() {
           animate={shouldReduceMotion ? {} : { opacity: 1, y: 0 }}
           transition={{ duration: 0.85, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
           className="system-panel hidden rounded-[1.6rem] p-6 pt-10 sm:p-7 sm:pt-10 lg:block"
+          data-cursor="card"
         >
           <div className="space-y-6">
             <div>

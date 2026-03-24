@@ -20,6 +20,7 @@ export function PublicationsSection() {
             <Reveal
               key={item.title}
               delay={index * 0.04}
+              data-cursor="card"
               className="theme-card rounded-[1.35rem] px-5 py-5 sm:px-6"
             >
               <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">

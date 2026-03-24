@@ -20,6 +20,7 @@ export function EngagementsSection() {
             <Reveal
               key={group.label}
               delay={index * 0.08}
+              data-cursor="card"
               className="theme-card rounded-[1.45rem] p-5 sm:p-6"
             >
               <p className="text-[0.74rem] uppercase tracking-[0.22em] text-text-muted">{group.label}</p>
