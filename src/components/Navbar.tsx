@@ -30,7 +30,7 @@ export function Navbar() {
                 me.spatialdom
               </span>
               <span className="mt-0.5 block truncate text-[0.72rem] font-medium uppercase tracking-[0.22em] text-text-muted">
-                Dominic Fargas
+                Dominic Fargas Jr.
               </span>
             </a>
 
@@ -46,35 +46,46 @@ export function Navbar() {
                 rel="noreferrer"
                 className="rounded-full border border-border px-3 py-2 text-[0.76rem] uppercase tracking-[0.18em] text-text-secondary transition hover:border-border-strong hover:text-text-primary"
               >
-                Spatialdom
+                spatialdom.xyz
               </a>
             </nav>
 
-            <button
-              type="button"
-              className="theme-icon-button inline-flex h-11 w-11 items-center justify-center rounded-full md:hidden"
-              aria-label={mobileOpen ? 'Close navigation' : 'Open navigation'}
-              aria-expanded={mobileOpen}
-              onClick={() => setMobileOpen((value) => !value)}
-            >
-              <div className="relative h-3.5 w-4">
-                <span
-                  className={`absolute left-0 top-0 h-px w-4 bg-current transition ${
-                    mobileOpen ? 'translate-y-[6px] rotate-45' : ''
-                  }`}
-                />
-                <span
-                  className={`absolute left-0 top-[6px] h-px w-4 bg-current transition ${
-                    mobileOpen ? 'opacity-0' : 'opacity-100'
-                  }`}
-                />
-                <span
-                  className={`absolute left-0 top-3 h-px w-4 bg-current transition ${
-                    mobileOpen ? '-translate-y-[6px] -rotate-45' : ''
-                  }`}
-                />
-              </div>
-            </button>
+            <div className="flex items-center gap-2 md:hidden">
+              <a
+                href={profile.spatialdom}
+                target="_blank"
+                rel="noreferrer"
+                className="theme-chip inline-flex items-center rounded-full px-3 py-2 text-[0.68rem] font-medium uppercase tracking-[0.18em] text-text-secondary transition hover:border-border-hover hover:bg-surface-hover hover:text-text-primary"
+              >
+                Spatialdom
+              </a>
+
+              <button
+                type="button"
+                className="theme-icon-button inline-flex h-11 w-11 items-center justify-center rounded-full"
+                aria-label={mobileOpen ? 'Close navigation' : 'Open navigation'}
+                aria-expanded={mobileOpen}
+                onClick={() => setMobileOpen((value) => !value)}
+              >
+                <div className="relative h-3.5 w-4">
+                  <span
+                    className={`absolute left-0 top-0 h-px w-4 bg-current transition ${
+                      mobileOpen ? 'translate-y-[6px] rotate-45' : ''
+                    }`}
+                  />
+                  <span
+                    className={`absolute left-0 top-[6px] h-px w-4 bg-current transition ${
+                      mobileOpen ? 'opacity-0' : 'opacity-100'
+                    }`}
+                  />
+                  <span
+                    className={`absolute left-0 top-3 h-px w-4 bg-current transition ${
+                      mobileOpen ? '-translate-y-[6px] -rotate-45' : ''
+                    }`}
+                  />
+                </div>
+              </button>
+            </div>
           </div>
 
           <AnimatePresence initial={false}>

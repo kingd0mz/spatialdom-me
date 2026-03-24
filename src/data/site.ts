@@ -51,7 +51,7 @@ export const navItems: NavItem[] = [
 
 export const profile = {
   name: 'Dominic C. Fargas Jr.',
-  shortName: 'Dominic Fargas',
+  shortName: 'Dominic Fargas Jr.',
   title: 'Geospatial Systems Architect',
   statement: 'Designing geospatial systems for governance, resilience, and decision-making.',
   description:
