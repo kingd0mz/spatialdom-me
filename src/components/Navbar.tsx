@@ -52,7 +52,7 @@ export function Navbar() {
 
             <button
               type="button"
-              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border bg-white/5 text-text-primary md:hidden"
+              className="theme-icon-button inline-flex h-11 w-11 items-center justify-center rounded-full md:hidden"
               aria-label={mobileOpen ? 'Close navigation' : 'Open navigation'}
               aria-expanded={mobileOpen}
               onClick={() => setMobileOpen((value) => !value)}
@@ -84,7 +84,7 @@ export function Navbar() {
                 animate={{ opacity: 1, height: 'auto', marginTop: 16 }}
                 exit={{ opacity: 0, height: 0, marginTop: 0 }}
                 transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
-                className="overflow-hidden border-t border-border pt-4 md:hidden"
+                className="theme-mobile-nav overflow-hidden pt-4 md:hidden"
               >
                 <div className="grid gap-2">
                   {navItems.map((item) => (
@@ -92,7 +92,7 @@ export function Navbar() {
                       key={item.href}
                       href={item.href}
                       onClick={() => setMobileOpen(false)}
-                      className="rounded-2xl border border-border bg-white/[0.03] px-4 py-3 text-sm text-text-secondary transition hover:border-border-strong hover:bg-white/[0.05] hover:text-text-primary"
+                      className="theme-mobile-link px-4 py-3"
                     >
                       {item.label}
                     </a>
@@ -101,7 +101,7 @@ export function Navbar() {
                     href={profile.spatialdom}
                     target="_blank"
                     rel="noreferrer"
-                    className="rounded-2xl border border-border bg-white/[0.03] px-4 py-3 text-sm text-text-secondary transition hover:border-border-strong hover:bg-white/[0.05] hover:text-text-primary"
+                    className="theme-mobile-link px-4 py-3"
                   >
                     Visit Spatialdom
                   </a>

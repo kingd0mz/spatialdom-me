@@ -20,7 +20,7 @@ export function EngagementsSection() {
             <Reveal
               key={group.label}
               delay={index * 0.08}
-              className="rounded-[1.45rem] border border-border bg-white/[0.025] p-5 sm:p-6"
+              className="theme-card rounded-[1.45rem] p-5 sm:p-6"
             >
               <p className="text-[0.74rem] uppercase tracking-[0.22em] text-text-muted">{group.label}</p>
               <div className="mt-5 grid gap-4">

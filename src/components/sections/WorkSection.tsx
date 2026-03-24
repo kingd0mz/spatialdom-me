@@ -36,7 +36,7 @@ export function WorkSection() {
                     {item.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="rounded-full border border-border bg-white/[0.03] px-3 py-1.5 text-[0.72rem] uppercase tracking-[0.18em] text-text-secondary"
+                        className="theme-chip px-3 py-1.5 text-[0.72rem] uppercase tracking-[0.18em] text-text-secondary"
                       >
                         {tag}
                       </span>

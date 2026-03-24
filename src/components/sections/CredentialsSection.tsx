@@ -20,7 +20,7 @@ export function CredentialsSection() {
               <Reveal
                 key={item.label}
                 delay={index * 0.06}
-                className="rounded-[1.45rem] border border-border bg-white/[0.025] p-5 sm:p-6"
+                className="theme-card rounded-[1.45rem] p-5 sm:p-6"
               >
                 <p className="text-[0.74rem] uppercase tracking-[0.22em] text-text-muted">{item.label}</p>
                 <p className="mt-4 text-[1.02rem] font-medium leading-7 tracking-[-0.02em] text-text-primary">
@@ -40,7 +40,7 @@ export function CredentialsSection() {
               {credentialHighlights.map((item) => (
                 <div
                   key={item}
-                  className="rounded-[1.2rem] border border-border bg-white/[0.02] px-4 py-4 text-sm leading-6 text-text-secondary"
+                  className="theme-card rounded-[1.2rem] px-4 py-4 text-sm leading-6 text-text-secondary"
                 >
                   {item}
                 </div>

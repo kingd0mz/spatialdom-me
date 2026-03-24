@@ -19,7 +19,7 @@ export function AffiliationsSection() {
             <Reveal
               key={item.name}
               delay={index * 0.04}
-              className="rounded-[1.25rem] border border-border bg-white/[0.02] px-5 py-4 sm:px-6"
+              className="theme-card rounded-[1.25rem] px-5 py-4 sm:px-6"
             >
               <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between sm:gap-6">
                 <p className="text-[1rem] font-medium tracking-[-0.02em] text-text-primary">{item.name}</p>

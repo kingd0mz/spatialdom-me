@@ -12,13 +12,13 @@ export function BackgroundMotif() {
       >
         <path
           d="M64 482L140 338L228 362L306 215L394 249L480 92"
-          stroke="var(--motif-accent)"
+          stroke="var(--motif-line-2)"
           strokeWidth="1.2"
         />
-        <path d="M92 456L172 292L254 314L340 178L430 208" stroke="var(--motif-line)" strokeWidth="1" />
-        <circle cx="140" cy="338" r="4" fill="var(--motif-line)" />
-        <circle cx="306" cy="215" r="5" fill="var(--motif-accent)" />
-        <circle cx="480" cy="92" r="5" fill="var(--motif-line)" />
+        <path d="M92 456L172 292L254 314L340 178L430 208" stroke="var(--motif-line-1)" strokeWidth="1" />
+        <circle cx="140" cy="338" r="4" fill="var(--motif-dot-1)" />
+        <circle cx="306" cy="215" r="5" fill="var(--motif-dot-2)" />
+        <circle cx="480" cy="92" r="5" fill="var(--motif-dot-1)" />
       </svg>
 
       <svg
@@ -26,9 +26,9 @@ export function BackgroundMotif() {
         viewBox="0 0 360 360"
         fill="none"
       >
-        <rect x="42" y="42" width="276" height="276" rx="18" stroke="var(--motif-line)" />
-        <path d="M42 180H318M180 42V318" stroke="var(--motif-line)" />
-        <path d="M96 276L150 222L196 244L270 168" stroke="var(--motif-accent)" strokeWidth="1.15" />
+        <rect x="42" y="42" width="276" height="276" rx="18" stroke="var(--motif-line-1)" />
+        <path d="M42 180H318M180 42V318" stroke="var(--motif-line-3)" />
+        <path d="M96 276L150 222L196 244L270 168" stroke="var(--motif-line-2)" strokeWidth="1.15" />
       </svg>
     </div>
   );

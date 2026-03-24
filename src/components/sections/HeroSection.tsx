@@ -79,7 +79,7 @@ export function HeroSection() {
             {heroMeta.map((item) => (
               <span
                 key={item}
-                className="rounded-full border border-border bg-white/[0.03] px-3 py-2 text-[0.78rem] uppercase tracking-[0.2em] text-text-secondary"
+                className="theme-chip px-3 py-2 text-[0.78rem] uppercase tracking-[0.2em] text-text-secondary"
               >
                 {item}
               </span>
@@ -87,17 +87,17 @@ export function HeroSection() {
           </div>
 
           <div className="mt-6 grid gap-3 text-sm text-text-body sm:grid-cols-3">
-            <div className="rounded-2xl border border-border bg-white/[0.02] px-4 py-3">
+            <div className="theme-card rounded-2xl px-4 py-3">
               <p className="text-[0.7rem] uppercase tracking-[0.22em] text-text-muted">Base</p>
               <p className="mt-2 text-text-secondary">{profile.location}</p>
             </div>
-            <div className="rounded-2xl border border-border bg-white/[0.02] px-4 py-3">
+            <div className="theme-card rounded-2xl px-4 py-3">
               <p className="text-[0.7rem] uppercase tracking-[0.22em] text-text-muted">Email</p>
               <a href={`mailto:${profile.email}`} className="mt-2 block text-link">
                 {profile.email}
               </a>
             </div>
-            <div className="rounded-2xl border border-border bg-white/[0.02] px-4 py-3">
+            <div className="theme-card rounded-2xl px-4 py-3">
               <p className="text-[0.7rem] uppercase tracking-[0.22em] text-text-muted">Ecosystem</p>
               <a href={profile.spatialdom} target="_blank" rel="noreferrer" className="mt-2 block text-link">
                 spatialdom.xyz

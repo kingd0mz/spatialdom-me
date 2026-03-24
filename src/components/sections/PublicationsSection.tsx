@@ -20,7 +20,7 @@ export function PublicationsSection() {
             <Reveal
               key={item.title}
               delay={index * 0.04}
-              className="rounded-[1.35rem] border border-border bg-white/[0.025] px-5 py-5 sm:px-6"
+              className="theme-card rounded-[1.35rem] px-5 py-5 sm:px-6"
             >
               <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
                 <div className="max-w-[720px]">

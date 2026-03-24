@@ -7,7 +7,7 @@ export function ContactSection() {
   return (
     <Section id="contact">
       <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_360px] lg:items-start lg:gap-10">
-        <Reveal className="rounded-[1.7rem] border border-border bg-white/[0.02] p-6 sm:p-8">
+        <Reveal className="theme-card rounded-[1.7rem] p-6 sm:p-8">
           <SectionHeader
             label="Contact"
             title="Available for collaborations, research, systems work, and speaking engagements."
@@ -39,7 +39,7 @@ export function ContactSection() {
                 href={item.href}
                 target={item.href.startsWith('http') ? '_blank' : undefined}
                 rel={item.href.startsWith('http') ? 'noreferrer' : undefined}
-                className="rounded-[1.2rem] border border-border bg-white/[0.02] px-4 py-4 transition hover:border-border-strong hover:bg-white/[0.04]"
+                className="theme-card rounded-[1.2rem] px-4 py-4 transition hover:border-border-hover hover:bg-surface-hover"
               >
                 <p className="text-[0.72rem] uppercase tracking-[0.22em] text-text-muted">{item.label}</p>
                 <p className="mt-2 text-sm leading-7 text-text-secondary">{item.value}</p>
