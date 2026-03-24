@@ -28,15 +28,24 @@ npm run preview
 
 This project is configured for static deployment.
 
-```bash
-npm run deploy
-```
+Primary deployment path:
+
+- [deploy.yml](C:/Users/ROG/Documents/Spatialdom/spatialdom-me/.github/workflows/deploy.yml)
+
+The workflow deploys automatically on pushes to `master` and also supports manual runs from the Actions tab.
 
 Notes:
 
 - `public/CNAME` is already set to `me.spatialdom.xyz`.
-- If you use a custom GitHub Actions workflow instead of `gh-pages`, keep the `CNAME` file in `public/` so it is copied to `dist/`.
-- For a custom domain on GitHub Pages, point the repository Pages settings to the published branch or deployment workflow, then keep the DNS for `me.spatialdom.xyz` aligned with GitHub Pages.
+- In the repository `Settings > Pages`, set `Source` to `GitHub Actions`.
+- Keep `public/CNAME` in place so the custom domain is copied into `dist/` during the workflow build.
+- For the custom domain, keep the DNS for `me.spatialdom.xyz` aligned with GitHub Pages.
+
+If you still want manual CLI deployment, the `gh-pages` script remains available:
+
+```bash
+npm run deploy
+```
 
 ## Update the CV file
 
