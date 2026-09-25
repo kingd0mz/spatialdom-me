@@ -1,4 +1,4 @@
-import { Reveal } from '../motion/Reveal';
+﻿import { Reveal } from '../motion/Reveal';
 import { Section } from '../Section';
 import { SectionHeader } from '../SectionHeader';
 import { selectedWork } from '../../data/site';
@@ -19,8 +19,8 @@ export function WorkSection() {
             <Reveal
               key={item.name}
               delay={index * 0.05}
-              data-cursor="card"
-              className="system-panel rounded-[1.5rem] p-5 pt-10 sm:p-6 sm:pt-10"
+
+              className="system-panel rounded-xl p-5 sm:p-6"
             >
               <div className="flex flex-col gap-4 lg:grid lg:grid-cols-[minmax(0,0.86fr)_minmax(0,1.14fr)] lg:gap-10">
                 <div>

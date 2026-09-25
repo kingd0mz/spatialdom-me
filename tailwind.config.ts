@@ -4,6 +4,9 @@ export default {
   content: ['./index.html', './src/**/*.{ts,tsx}'],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['"Source Sans 3"', 'sans-serif']
+      },
       colors: {
         background: 'var(--color-background)',
         surface: 'var(--color-surface)',

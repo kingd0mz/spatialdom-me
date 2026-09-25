@@ -46,6 +46,8 @@ export const navItems: NavItem[] = [
   { label: 'About', href: '#about' },
   { label: 'Experience', href: '#experience' },
   { label: 'Work', href: '#work' },
+  { label: 'Publications', href: '#publications' },
+  { label: 'Speaking', href: '#engagements' },
   { label: 'Contact', href: '#contact' },
 ];
 
@@ -65,8 +67,8 @@ export const profile = {
 };
 
 export const aboutCopy = [
-  'Dominic works at the junction of geospatial data, application development, and institutional decision infrastructure. His work is less about isolated interfaces and more about building operational systems that help cities, agencies, and research teams observe conditions, coordinate action, and act on spatial intelligence.',
-  'Across smart city platforms, earth observation dashboards, digital twin environments, and WebGIS tools, his practice combines architectural thinking with implementation depth, translating complex spatial workflows into systems that are usable, durable, and aligned with public value.',
+  'Dominic designs and builds geospatial tools for cities, agencies, and research teams. His work helps people monitor conditions, coordinate responses, and make decisions using location data.',
+  'His projects span smart city platforms, earth observation dashboards, digital twins, and WebGIS. He works across system design and implementation, with a focus on tools that institutions can use and maintain.',
 ];
 
 export const credentials: Credential[] = [

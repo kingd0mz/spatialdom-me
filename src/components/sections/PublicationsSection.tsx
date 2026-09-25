@@ -1,4 +1,4 @@
-import { Reveal } from '../motion/Reveal';
+﻿import { Reveal } from '../motion/Reveal';
 import { Section } from '../Section';
 import { SectionHeader } from '../SectionHeader';
 import { publications } from '../../data/site';
@@ -20,8 +20,8 @@ export function PublicationsSection() {
             <Reveal
               key={item.title}
               delay={index * 0.04}
-              data-cursor="card"
-              className="theme-card rounded-[1.35rem] px-5 py-5 sm:px-6"
+
+              className="theme-card rounded-xl px-5 py-5 sm:px-6"
             >
               <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
                 <div className="max-w-[720px]">
@@ -38,9 +38,10 @@ export function PublicationsSection() {
                     href={item.href}
                     target="_blank"
                     rel="noreferrer"
-                    className="text-sm text-link sm:mt-1"
+                    aria-label={`Read ${item.title} (opens in a new tab)`}
+                    className="inline-flex min-h-11 items-center text-sm text-link sm:mt-1"
                   >
-                    DOI
+                    DOI ↗
                   </a>
                 ) : null}
               </div>

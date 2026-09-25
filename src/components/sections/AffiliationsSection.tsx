@@ -1,4 +1,4 @@
-import { Reveal } from '../motion/Reveal';
+﻿import { Reveal } from '../motion/Reveal';
 import { Section } from '../Section';
 import { SectionHeader } from '../SectionHeader';
 import { affiliations } from '../../data/site';
@@ -19,8 +19,8 @@ export function AffiliationsSection() {
             <Reveal
               key={item.name}
               delay={index * 0.04}
-              data-cursor="card"
-              className="theme-card rounded-[1.25rem] px-5 py-4 sm:px-6"
+
+              className="theme-card rounded-xl px-5 py-4 sm:px-6"
             >
               <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between sm:gap-6">
                 <p className="text-[1rem] font-medium tracking-[-0.02em] text-text-primary">{item.name}</p>

@@ -14,8 +14,9 @@ import { WorkSection } from './components/sections/WorkSection';
 function App() {
   return (
     <AppShell>
+      <a href="#main-content" className="skip-link">Skip to content</a>
       <Navbar />
-      <main>
+      <main id="main-content">
         <HeroSection />
         <AboutSection />
         <CredentialsSection />

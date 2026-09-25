@@ -1,4 +1,4 @@
-import { Reveal } from '../motion/Reveal';
+﻿import { Reveal } from '../motion/Reveal';
 import { Section } from '../Section';
 import { SectionHeader } from '../SectionHeader';
 import { aboutCopy } from '../../data/site';
@@ -10,8 +10,8 @@ export function AboutSection() {
         <Reveal>
           <SectionHeader
             label="About"
-            title="The human operating layer behind Spatialdom."
-            description="A geospatial systems practice shaped around public value, field realities, and durable technical architecture."
+            title="Geospatial systems built for public decisions."
+            description="Dominic brings research, software, and field practice together to help institutions use spatial information."
           />
         </Reveal>
 

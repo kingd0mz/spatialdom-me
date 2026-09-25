@@ -1,4 +1,4 @@
-import { Reveal } from '../motion/Reveal';
+﻿import { Reveal } from '../motion/Reveal';
 import { Section } from '../Section';
 import { SectionHeader } from '../SectionHeader';
 import { credentialHighlights, credentials } from '../../data/site';
@@ -10,7 +10,7 @@ export function CredentialsSection() {
         <Reveal>
           <SectionHeader
             label="Credentials"
-            title="A concise signal of role, standing, and depth."
+            title="Roles, qualifications, and selected achievements."
           />
         </Reveal>
 
@@ -20,8 +20,8 @@ export function CredentialsSection() {
               <Reveal
                 key={item.label}
                 delay={index * 0.06}
-                data-cursor="card"
-                className="theme-card rounded-[1.45rem] p-5 sm:p-6"
+
+                className="theme-card rounded-xl p-5 sm:p-6"
               >
                 <p className="text-[0.74rem] uppercase tracking-[0.22em] text-text-muted">{item.label}</p>
                 <p className="mt-4 text-[1.02rem] font-medium leading-7 tracking-[-0.02em] text-text-primary">
@@ -34,16 +34,16 @@ export function CredentialsSection() {
 
           <Reveal
             delay={0.18}
-            data-cursor="card"
-            className="system-panel rounded-[1.45rem] p-5 pt-10 sm:p-6 sm:pt-10"
+
+            className="system-panel rounded-xl p-5 sm:p-6"
           >
-            <p className="text-[0.74rem] uppercase tracking-[0.22em] text-text-muted">Selected Signals</p>
+            <p className="text-[0.74rem] uppercase tracking-[0.22em] text-text-muted">Highlights</p>
             <div className="mt-5 grid gap-3 md:grid-cols-2">
               {credentialHighlights.map((item) => (
                 <div
                   key={item}
-                  data-cursor="card"
-                  className="theme-card rounded-[1.2rem] px-4 py-4 text-sm leading-6 text-text-secondary"
+
+                  className="theme-card rounded-xl px-4 py-4 text-sm leading-6 text-text-secondary"
                 >
                   {item}
                 </div>
